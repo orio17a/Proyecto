@@ -1,0 +1,11 @@
+<h1> Lista de Empleados </h1>
+
+{{ lista_empleado }}
+
+<ul>
+
+    {% for empleado in lista_empleado %}
+        <li>{{ empleado.nombre }} {{ empleado.apellido }} - {{ empleado.get_trabajo_display }}</li>
+    {% endfor %}
+
+</ul>

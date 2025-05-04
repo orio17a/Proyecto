@@ -1,0 +1,11 @@
+<h1> Lista de Departamentos </h1>
+
+{{ lista_departamento }}
+
+<ul>
+
+    {% for depto in lista_departamento %}
+        <li>{{ depto.nombre }} ({{ depto.sigla }}) - Piso: {{ depto.piso }} - Oficina: {{ depto.oficina }}</li>
+    {% endfor %}
+
+</ul>
